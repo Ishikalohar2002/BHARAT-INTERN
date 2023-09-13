@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="CSS\Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    </div>
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">My Portfolio</a>
+        <a href="contact.html" class="right"><i class="fa fa-fw fa-phone"></i>Contact</a>
+        <a href="project.html" class="right"><i class="fa fa-fw fa-desktop"></i>Project</a>
+        <a href="about_me.html" class="right" target=""><i class="fa fa-fw fa-user"></i>About</a>
+        <a href="Index.html" class="right"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    </div>
+    <div class="column">
+        <form class="contact">
+            <h2>Contact Me</h2><br>
+            <label for="fname"><i class="fa fa-user "></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+
+            <label for="subject"><i class="fa fa-hand-o-down"></i>How can I help you ?</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     background-image: url('R1.jpeg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     overflow: hidden;
+ }
+ 
+ .hero {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ .topnav {
+     overflow: hidden;
+     background-color: #0000803e;
+     width: 100%;
+     min-height: 20px;
+ }
+ 
+ .topnav a.right {
+     float: right;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 16px 10px;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 100px;
+ }
+ 
+ .topnav a:hover {
+     background-color: #ddd;
+     color: black;
+ }
+ 
+ .topnav a.active {
+     color: whitesmoke;
+     padding: 12px 12px;
+     text-align: center;
+     justify-content: center;
+     font-size: 40px;
+     font-family: "Lucida Handwriting", cursive;
+     background-color: rgba(208, 205, 235, 0.489);
+     text-decoration: none;
+     border-radius: 40px;
+     margin-top: 0;
+ }
+ 
+ .topnav .icon {
+     display: none;
+     font-size: 40px;
+     color: whitesmoke;
+ }
+ 
+ @media screen and (max-width: 900px) {
+     .topnav a:not(:first-child) {
+         display: none;
+     }
+     .topnav a.icon {
+         float: right;
+         display: block;
+     }
+ }
+ 
+ @media screen and (max-width: 900px) {
+     .topnav.responsive {
+         position: relative;
+     }
+     .topnav.responsive .icon {
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+     .topnav.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+     }
+ }
+ 
+ .image {
+     bottom: 0;
+     right: 0;
+ }
+ 
+ .image img {
+     height: 160px;
+     transform: translateX(-10%);
+     transition: bottom 1s, left;
+     border-radius: 50%;
+     width: 160px;
+     margin-left: 140px;
+     margin-top: 75px;
+ }
+ 
+ .image:hover .shape {
+     bottom: 260px;
+ }
+ 
+ .position {
+     align-items: center;
+ }
+ 
+ .triangle {
+     clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+     background: blue linear-gradient(red, blue);
+     width: 300px;
+     height: 300px;
+     display: flex;
+     left: 30%;
+     top: 10%;
+     right: 0;
+     position: fixed;
+     padding: auto;
+ }
+ 
+ #home {
+     position: absolute;
+     padding: 12px;
+     bottom: 10%;
+     right: 20%;
+     left: 20%;
+     font-family: "Times New Roman", cursive;
+     font-size: 20px;
+ }
+ 
+ .Resume a {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .Resume {
+     color: white;
+     padding: 3px 20px;
+     font-size: 20px;
+     text-decoration: none;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     background-color: #000080;
+     justify-content: left;
+     align-items: left;
+ }
+ 
+ .Resume:hover {
+     color: white;
+     background-color: #000080;
+ }
+ 
+ .about_me {
+     text-align: center;
+     color: white;
+ }
+ 
+ .about {
+     padding: 50px 100px;
+     height: 200px;
+     border: 1px;
+     text-align: left;
+     font-size: 20px;
+     position: absolute;
+     color: white;
+ }
+ 
+ .fixed {
+     color: white;
+ }
+ 
+ .fixed h3 {
+     font-family: "Lucida Handwriting", cursive;
+ }
+ 
+ .fixed h3 span {
+     color: darkorange;
+     font-size: 26px;
+ }
+ 
+ .contact {
+     color: white;
+ }
+ 
+ .contact h2 {
+     text-align: center;
+ }
+ 
+ .column {
+     width: 30%;
+     margin-top: 20px;
+     margin-bottom: 0;
+     margin-left: 35%;
+     margin-right: 35%;
+     align-items: center;
+ }
+ 
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 14px 14px;
+     border: 1px solid #ccc;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+ }
+ 
+ input[type=submit] {
+     background-color: #174209;
+     color: rgb(255, 255, 255);
+     padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+     border-radius: 10px;
+ }
+ 
+ .project h2 {
+     text-align: center;
+     font-size: 40px;
+     color: white;
+ }
+ 
+ .project button a {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .project button {
+     background-color: #174209;
+     margin-left: 30px;
+     margin-bottom: 5px;
+     padding: 3px 20px;
+     font-size: 20px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .project img {
+     margin-top: 10px;
+     height: 10%;
+     max-width: 30%;
+     margin-bottom: 10px;
+     margin-left: 300px;
+ }
