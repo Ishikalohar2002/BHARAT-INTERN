@@ -1,2 +1,2 @@
-# BHARAT-INTERN-Task_No_1
+# Portfolio
 Portfolio is a simple project developed using HTML and CSS
